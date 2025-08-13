@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insurance Filing Portals · Link Hub</title>
+  <meta name="description" content="State-by-state quick links to SERFF and DOI public product filing portals for insurance product manuals, rates, and forms.">
+  <script src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:,">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="sticky top-0 z-10 bg-white/80 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-lg sm:text-xl font-semibold">Insurance Filing Link Hub</h1>
+      <a class="text-sm underline" href="https://github.com/" target="_blank" rel="noreferrer">Contribute</a>
+    </div>
+  </header>
+
+  <main x-data="linkHub()" class="max-w-6xl mx-auto px-4 py-6">
+    <section class="mb-6 grid gap-3 md:grid-cols-4">
+      <div class="md:col-span-2">
+        <label class="block text-sm font-medium mb-1">Search</label>
+        <input x-model="query" type="text" placeholder="State, code, region, or note (e.g., 'CA', 'Texas', 'West')" class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring ring-indigo-200">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Region</label>
+        <select x-model="region" class="w-full rounded-xl border px-3 py-2">
+          <option value="">All</option>
+          <template x-for="r in regions" :key="r">
+            <option :value="r" x-text="r"></option>
+          </template>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Line of Business</label>
+        <select x-model="lob" class="w-full rounded-xl border px-3 py-2">
+          <option value="">All</option>
+          <option>Life</option>
+          <option>Health</option>
+          <option>Property & Casualty</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="mb-4 flex items-center gap-3">
+      <button @click="refreshHealth()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Refresh Link Health</button>
+      <span class="text-xs text-gray-600" x-text="'Health last updated ' + (health.updatedAt || 'N/A')"></span>
+    
+    <section class="mb-6 flex items-center gap-3">
+      <button @click="exportCSV()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Export CSV (filtered)</button>
+      <button @click="showTemplates=true" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Saved SERFF Queries</button>
+    </section>
+
+    <!-- Templates Modal -->
+    <div x-show="showTemplates" style="display:none" class="fixed inset-0 z-20 flex items-center justify-center bg-black/40 p-4">
+      <div class="w-full max-w-2xl rounded-2xl bg-white shadow-xl p-4">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="text-lg font-semibold">Saved SERFF Query Templates</h3>
+          <button @click="showTemplates=false" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50">Close</button>
+        </div>
+        <p class="text-sm text-gray-600 mb-3">SERFF SFA doesn’t support deep-linking queries; use these templates after clicking “Begin Search” in the state portal.</p>
+        <ul class="space-y-3 text-sm">
+          <li><strong>By Company Name</strong>: <code>Company Name = {e.g., State Farm}</code></li>
+          <li><strong>By Type of Insurance (TOI)</strong>: <code>TOI = {e.g., Commercial Auto; Personal Auto; Homeowners; Life; Accident & Health}</code></li>
+          <li><strong>Date Range</strong>: <code>Filing Date From / To = {e.g., 2024-01-01 to 2025-12-31}</code></li>
+          <li><strong>Form Number</strong>: <code>Form Number = {e.g., HO-3, CG 00 01}</code></li>
+          <li><strong>Filing Type</strong>: <code>Rate / Rule / Form / Prior Approval</code></li>
+        </ul>
+        <div class="mt-4 grid sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs mb-1">Quick Copy — Company</label>
+            <input x-model="template.company" class="w-full rounded-xl border px-3 py-2" placeholder="e.g., Travelers"/>
+          </div>
+          <div>
+            <label class="block text-xs mb-1">Quick Copy — TOI</label>
+            <input x-model="template.toi" class="w-full rounded-xl border px-3 py-2" placeholder="e.g., Homeowners"/>
+          </div>
+          <div>
+            <label class="block text-xs mb-1">From</label>
+            <input x-model="template.from" type="date" class="w-full rounded-xl border px-3 py-2"/>
+          </div>
+          <div>
+            <label class="block text-xs mb-1">To</label>
+            <input x-model="template.to" type="date" class="w-full rounded-xl border px-3 py-2"/>
+          </div>
+        </div>
+        <div class="mt-3 flex items-center gap-2">
+          <button @click="copyTemplate()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Copy Template</button>
+          <span class="text-xs text-gray-500">Paste into SERFF filters after clicking Begin Search.</span>
+        </div>
+      </div>
+    </div>
+
+
+    <template x-if="filtered.length === 0">
+      <div class="text-sm text-gray-500">No states match your filters.</div>
+    </template>
+
+    <div class="grid gap-4 md:grid-cols-2">
+      <template x-for="s in filtered" :key="s.stateCode">
+        <article class="rounded-2xl border bg-white p-4 shadow-sm">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="text-lg font-semibold" x-text="s.stateName + ' (' + s.stateCode + ')'"></h2>
+              <div class="mt-1 flex items-center gap-2">
+                <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 border" x-text="s.region"></span>
+                <template x-for="b in s.supportedLoB">
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 border" x-text="b"></span>
+                </template>
+              </div>
+            </div>
+            <div class="text-right text-xs text-gray-500">
+              <div>Links: <span x-text="s.links.length"></span></div>
+            </div>
+          </div>
+          <p class="mt-3 text-sm text-gray-700" x-show="s.notes" x-text="s.notes"></p>
+          <ul class="mt-3 space-y-2">
+            <template x-for="lnk in s.links" :key="lnk.url">
+              <li class="flex items-center justify-between gap-2">
+                <div class="min-w-0">
+                  <div class="font-medium truncate" x-text="lnk.label"></div>
+                  <div class="text-xs text-gray-500 truncate" x-text="lnk.url"></div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <template x-if="health.results[lnk.url]">
+                    <span class="text-xs px-2 py-1 rounded-full"
+                      :class="health.results[lnk.url].ok ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'"
+                      x-text="health.results[lnk.url].ok ? 'OK' : ('ERR ' + (health.results[lnk.url].status || ''))">
+                    </span>
+                  </template>
+                  <a :href="lnk.url" target="_blank" rel="noreferrer" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50">Open</a>
+                  <button @click="copy(lnk.url)" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50">Copy</button>
+                </div>
+              </li>
+            </template>
+          </ul>
+        </article>
+      </template>
+    </div>
+  </main>
+
+  <script>
+    function basePath() {
+      // Handles GitHub Pages subpath deployments
+      const path = window.location.pathname;
+      const parts = path.split('/').filter(Boolean);
+      if (parts.length >= 1 && path.includes('/assets')) return '.';
+      if (parts.length >= 1) return '/' + parts[0];
+      return '';
+    }
+
+    function linkHub() {
+      return { showTemplates:false, template:{company:'', toi:'', from:'', to:''},
+        all: [],
+        health: { updatedAt: '', results: {} },
+        query: '',
+        region: '',
+        lob: '',
+        regions: ['Northeast', 'Midwest', 'South', 'West'],
+        get filtered() {
+          const q = this.query.toLowerCase().trim();
+          return this.all.filter(s => {
+            const byQuery = !q || (s.stateName.toLowerCase().includes(q) || s.stateCode.toLowerCase().includes(q) || s.region.toLowerCase().includes(q));
+            const byRegion = !this.region || s.region === this.region;
+            const byLob = !this.lob || (s.supportedLoB || []).includes(this.lob);
+            return byQuery && byRegion && byLob;
+          });
+        },
+        
+        exportCSV() {
+          const rows = [['stateCode','stateName','region','label','url','type','ok','status']];
+          for (const s of this.filtered) {
+            for (const l of s.links) {
+              const h = this.health.results[l.url] || {};
+              rows.push([s.stateCode, s.stateName, s.region, l.label, l.url, l.type || '', h.ok === true ? 'true' : (h.ok === false ? 'false' : ''), h.status || '']);
+            }
+          }
+          const csv = rows.map(r => r.map(x => {
+            const s = (x ?? '').toString();
+            return /[",\n]/.test(s) ? '"' + s.replaceAll('"','""') + '"' : s;
+          }).join(',')).join('\n');
+          const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'state-portal-links.csv';
+          a.click();
+          URL.revokeObjectURL(url);
+        },
+        copyTemplate() {
+          const parts = [];
+          if (this.template.company) parts.push(`Company = ${this.template.company}`);
+          if (this.template.toi) parts.push(`TOI = ${this.template.toi}`);
+          if (this.template.from || this.template.to) parts.push(`Date = ${this.template.from || ''} to ${this.template.to || ''}`);
+          const txt = parts.join(' | ') || 'Company = {name} | TOI = {type} | Date = {from} to {to}';
+          navigator.clipboard.writeText(txt);
+        },
+
+        async init() {
+          const sp = await fetch(basePath() + '/assets/statePortals.json').then(r => r.json());
+          this.all = sp.states;
+          try {
+            const h = await fetch(basePath() + '/assets/health.json').then(r => r.json());
+            this.health = h;
+          } catch (e) {}
+        },
+        async refreshHealth() {
+          try {
+            const h = await fetch(basePath() + '/assets/health.json?cache=' + Date.now()).then(r => r.json());
+            this.health = h;
+          } catch (e) {
+            alert('No updated health.json found yet. Push checker results to your host.');
+          }
+        },
+        async copy(text) {
+          try { await navigator.clipboard.writeText(text); } catch (e) {}
+        }
+      }
+    }
+  </script>
+</body>
+</html>

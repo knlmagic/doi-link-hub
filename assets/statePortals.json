@@ -1,0 +1,1145 @@
+{
+  "generatedAt": "2025-08-13T17:42:45.775179Z",
+  "states": [
+    {
+      "stateCode": "AL",
+      "stateName": "Alabama",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/AL",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Alabama+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "AK",
+      "stateName": "Alaska",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/AK",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Alaska+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "AZ",
+      "stateName": "Arizona",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/AZ",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Arizona+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "AR",
+      "stateName": "Arkansas",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/AR",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Arkansas+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "CA",
+      "stateName": "California",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access (CA)",
+          "url": "https://filingaccess.serff.com/sfa/home/CA",
+          "type": "serff"
+        },
+        {
+          "label": "CA DOI Virtual Viewing Room (WARFF & SERFF)",
+          "url": "https://www.insurance.ca.gov/0250-insurers/0800-rate-filings/0050-viewing-room/",
+          "type": "doi"
+        },
+        {
+          "label": "CA DOI Rate Filings",
+          "url": "https://www.insurance.ca.gov/0250-insurers/0800-rate-filings/",
+          "type": "doi"
+        }
+      ],
+      "notes": "Pre\u2011electronic P&C via WARFF; some archives require in\u2011person viewing (LA/Oakland). Life/Disability/Health forms searchable online via SERFF."
+    },
+    {
+      "stateCode": "CO",
+      "stateName": "Colorado",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/CO",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Colorado+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "CT",
+      "stateName": "Connecticut",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/CT",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Connecticut+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "DE",
+      "stateName": "Delaware",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/DE",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Delaware+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "DC",
+      "stateName": "District of Columbia",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/DC",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=District+of+Columbia+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "FL",
+      "stateName": "Florida",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "FL OIR IRFS Forms & Rates Search",
+          "url": "https://irfssearch.fldfs.com/",
+          "type": "doi"
+        },
+        {
+          "label": "FL OIR Site (Filing Search link)",
+          "url": "https://floir.com/",
+          "type": "doi"
+        }
+      ]
+    },
+    {
+      "stateCode": "GA",
+      "stateName": "Georgia",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/GA",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Georgia+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "HI",
+      "stateName": "Hawaii",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/HI",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Hawaii+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "ID",
+      "stateName": "Idaho",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/ID",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Idaho+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "IL",
+      "stateName": "Illinois",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access (IL)",
+          "url": "https://filingaccess.serff.com/sfa/home/IL",
+          "type": "serff"
+        },
+        {
+          "label": "IL DOI Public Access (SERFF + PEDS)",
+          "url": "https://idoi.illinois.gov/companies/rate-rule-form-filings-public-access.html",
+          "type": "doi"
+        }
+      ]
+    },
+    {
+      "stateCode": "IN",
+      "stateName": "Indiana",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/IN",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Indiana+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "IA",
+      "stateName": "Iowa",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/IA",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Iowa+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "KS",
+      "stateName": "Kansas",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/KS",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Kansas+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "KY",
+      "stateName": "Kentucky",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/KY",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Kentucky+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "LA",
+      "stateName": "Louisiana",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/LA",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Louisiana+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "ME",
+      "stateName": "Maine",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/ME",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Maine+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "MD",
+      "stateName": "Maryland",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/MD",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Maryland+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "MA",
+      "stateName": "Massachusetts",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/MA",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Massachusetts+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "MI",
+      "stateName": "Michigan",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/MI",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Michigan+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "MN",
+      "stateName": "Minnesota",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/MN",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Minnesota+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "MS",
+      "stateName": "Mississippi",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/MS",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Mississippi+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "MO",
+      "stateName": "Missouri",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/MO",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Missouri+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "MT",
+      "stateName": "Montana",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/MT",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Montana+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "NE",
+      "stateName": "Nebraska",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/NE",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Nebraska+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "NV",
+      "stateName": "Nevada",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/NV",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Nevada+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "NH",
+      "stateName": "New Hampshire",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/NH",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=New+Hampshire+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "NJ",
+      "stateName": "New Jersey",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/NJ",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=New+Jersey+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "NM",
+      "stateName": "New Mexico",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/NM",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=New+Mexico+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "NY",
+      "stateName": "New York",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access (NY)",
+          "url": "https://filingaccess.serff.com/sfa/home/NY",
+          "type": "serff"
+        },
+        {
+          "label": "NY DFS SERFF Instructions (Health)",
+          "url": "https://www.dfs.ny.gov/apps_and_licensing/health_insurers/serff_filing_instructions/ah_filings_ny",
+          "type": "doi"
+        }
+      ]
+    },
+    {
+      "stateCode": "NC",
+      "stateName": "North Carolina",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/NC",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=North+Carolina+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "ND",
+      "stateName": "North Dakota",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/ND",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=North+Dakota+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "OH",
+      "stateName": "Ohio",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/OH",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Ohio+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "OK",
+      "stateName": "Oklahoma",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/OK",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Oklahoma+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "OR",
+      "stateName": "Oregon",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access (OR)",
+          "url": "https://filingaccess.serff.com/sfa/home/OR",
+          "type": "serff"
+        },
+        {
+          "label": "Oregon DFR SERFF Public Review",
+          "url": "https://dfr.oregon.gov/rates-forms/pages/serff-public-review.aspx",
+          "type": "doi"
+        }
+      ],
+      "notes": "DFR hosts SERFF public review guidance; some copyrighted materials may be redacted; contact DFR for assistance."
+    },
+    {
+      "stateCode": "PA",
+      "stateName": "Pennsylvania",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/PA",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Pennsylvania+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "RI",
+      "stateName": "Rhode Island",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/RI",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Rhode+Island+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "SC",
+      "stateName": "South Carolina",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/SC",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=South+Carolina+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "SD",
+      "stateName": "South Dakota",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/SD",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=South+Dakota+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "TN",
+      "stateName": "Tennessee",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/TN",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Tennessee+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "TX",
+      "stateName": "Texas",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access (TX)",
+          "url": "https://filingaccess.serff.com/sfa/home/TX",
+          "type": "serff"
+        },
+        {
+          "label": "TDI SERFF Public Access info",
+          "url": "https://www.tdi.texas.gov/company/serff/index.html",
+          "type": "doi"
+        },
+        {
+          "label": "TDI P&C filings overview",
+          "url": "https://www.tdi.texas.gov/commercial/pcapproval.html",
+          "type": "doi"
+        }
+      ]
+    },
+    {
+      "stateCode": "UT",
+      "stateName": "Utah",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/UT",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Utah+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "VT",
+      "stateName": "Vermont",
+      "region": "Northeast",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/VT",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Vermont+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "VA",
+      "stateName": "Virginia",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/VA",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Virginia+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "WA",
+      "stateName": "Washington",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access (WA)",
+          "url": "https://filingaccess.serff.com/sfa/home/WA",
+          "type": "serff"
+        },
+        {
+          "label": "WA OIC \u2013 Search Company Filings",
+          "url": "https://www.insurance.wa.gov/insurers-regulated-entities/rate-and-form-filing/search-company-filings-serff-filing-access",
+          "type": "doi"
+        },
+        {
+          "label": "WA OIC \u2013 SERFF Guidelines",
+          "url": "https://www.insurance.wa.gov/insurers-regulated-entities/rate-and-form-filing/serff-guidelines",
+          "type": "doi"
+        }
+      ],
+      "notes": "Separate guidance pages for health, P&C, and LTC filings. Use SERFF SFA; WA OIC pages provide instructions and support."
+    },
+    {
+      "stateCode": "WV",
+      "stateName": "West Virginia",
+      "region": "South",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/WV",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=West+Virginia+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "WI",
+      "stateName": "Wisconsin",
+      "region": "Midwest",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/WI",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Wisconsin+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    },
+    {
+      "stateCode": "WY",
+      "stateName": "Wyoming",
+      "region": "West",
+      "supportedLoB": [
+        "Life",
+        "Health",
+        "Property & Casualty"
+      ],
+      "links": [
+        {
+          "label": "SERFF Public Access",
+          "url": "https://filingaccess.serff.com/sfa/home/WY",
+          "type": "serff"
+        },
+        {
+          "label": "Find DOI Portal",
+          "url": "https://www.google.com/search?q=Wyoming+Department+of+Insurance+SERFF+public+access",
+          "type": "doi-search"
+        }
+      ]
+    }
+  ]
+}
