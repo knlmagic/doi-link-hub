@@ -131,8 +131,12 @@
                 <div class="flex items-center gap-2 shrink-0">
                   <template x-if="health.results[lnk.url]">
                     <span class="text-xs px-2 py-1 rounded-full"
-                      :class="health.results[lnk.url].ok ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' : 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300'"
-                      x-text="health.results[lnk.url].ok ? 'OK' : ('ERR ' + (health.results[lnk.url].status || ''))">
+                      :class="(health.results[lnk.url].status===401||health.results[lnk.url].status===403)
+                        ? 'bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-300'
+                        : (health.results[lnk.url].ok ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' : 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300')"
+                      x-text="(health.results[lnk.url].status===401||health.results[lnk.url].status===403)
+                        ? 'Protected'
+                        : (health.results[lnk.url].ok ? 'OK' : ('ERR ' + (health.results[lnk.url].status || ''))) ">
                     </span>
                   </template>
                   <a :href="lnk.url" target="_blank" rel="noreferrer" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:border-gray-700">Open</a>

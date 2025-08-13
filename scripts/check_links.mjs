@@ -29,11 +29,15 @@ async function fetchOnce(url, options, timeoutMs = DEFAULT_TIMEOUT_MS) {
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
   try {
     const headers = {
-      'user-agent': 'doi-link-hub-link-checker/1.0 (+https://github.com/knlmagic/doi-link-hub)',
-      'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-      'accept-language': 'en-US,en;q=0.9'
+      // Pretend to be a modern Chrome on Windows to reduce bot-blocking 403s
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+      'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+      'accept-language': 'en-US,en;q=0.9',
+      'cache-control': 'no-cache',
+      'pragma': 'no-cache',
+      'upgrade-insecure-requests': '1'
     };
-    const res = await fetch(url, { ...options, headers, signal: controller.signal });
+    const res = await fetch(url, { ...options, headers, redirect: 'manual', signal: controller.signal });
     return res;
   } finally {
     clearTimeout(timeoutId);
