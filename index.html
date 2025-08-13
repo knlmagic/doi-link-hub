@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Insurance Filing Portals · Link Hub</title>
   <meta name="description" content="State-by-state quick links to SERFF and DOI public product filing portals for insurance product manuals, rates, and forms.">
+  <meta name="color-scheme" content="dark light">
+  <script>try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}</script>
+  <script>window.tailwind=window.tailwind||{};tailwind.config={darkMode:'class'};</script>
   <script src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="data:,">
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <header class="sticky top-0 z-10 bg-white/80 backdrop-blur border-b">
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+  <header class="sticky top-0 z-10 bg-white/80 backdrop-blur border-b dark:bg-gray-900/80 dark:border-gray-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <h1 class="text-lg sm:text-xl font-semibold">Insurance Filing Link Hub</h1>
-      <a class="text-sm underline" href="https://github.com/knlmagic/doi-link-hub" target="_blank" rel="noreferrer">Contribute</a>
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" class="rounded-lg px-3 py-1.5 border bg-white hover:bg-gray-50 text-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-700" title="Toggle theme">Theme</button>
+        <a class="text-sm underline" href="https://github.com/knlmagic/doi-link-hub" target="_blank" rel="noreferrer">Contribute</a>
+      </div>
     </div>
   </header>
 
@@ -21,11 +27,11 @@
     <section class="mb-6 grid gap-3 md:grid-cols-4">
       <div class="md:col-span-2">
         <label class="block text-sm font-medium mb-1">Search</label>
-        <input x-model="query" type="text" placeholder="State, code, region, or note (e.g., 'CA', 'Texas', 'West')" class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring ring-indigo-200">
+        <input x-model="query" type="text" placeholder="State, code, region, or note (e.g., 'CA', 'Texas', 'West')" class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring ring-indigo-200 bg-white text-gray-900 border-gray-300 placeholder-gray-500 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700 dark:placeholder-gray-500">
       </div>
       <div>
         <label class="block text-sm font-medium mb-1">Region</label>
-        <select x-model="region" class="w-full rounded-xl border px-3 py-2">
+        <select x-model="region" class="w-full rounded-xl border px-3 py-2 bg-white text-gray-900 border-gray-300 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700">
           <option value="">All</option>
           <template x-for="r in regions" :key="r">
             <option :value="r" x-text="r"></option>
@@ -34,7 +40,7 @@
       </div>
       <div>
         <label class="block text-sm font-medium mb-1">Line of Business</label>
-        <select x-model="lob" class="w-full rounded-xl border px-3 py-2">
+        <select x-model="lob" class="w-full rounded-xl border px-3 py-2 bg-white text-gray-900 border-gray-300 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700">
           <option value="">All</option>
           <option>Life</option>
           <option>Health</option>
@@ -44,9 +50,9 @@
     </section>
 
     <section class="mb-4 flex items-center gap-3">
-      <button @click="refreshHealth()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Refresh Link Health</button>
-      <span class="text-xs text-gray-600" x-text="'Health last updated ' + (health.updatedAt || 'N/A')"></span>
-    
+      <button @click="refreshHealth()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:border-gray-700">Refresh Link Health</button>
+      <span class="text-xs text-gray-600 dark:text-gray-400" x-text="'Health last updated ' + (health.updatedAt || 'N/A')"></span>
+    </section>
     <section class="mb-6 flex items-center gap-3">
       <button @click="exportCSV()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Export CSV (filtered)</button>
       <button @click="showTemplates=true" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Saved SERFF Queries</button>
@@ -54,12 +60,12 @@
 
     <!-- Templates Modal -->
     <div x-show="showTemplates" style="display:none" class="fixed inset-0 z-20 flex items-center justify-center bg-black/40 p-4">
-      <div class="w-full max-w-2xl rounded-2xl bg-white shadow-xl p-4">
+      <div class="w-full max-w-2xl rounded-2xl bg-white shadow-xl p-4 dark:bg-gray-900 dark:border dark:border-gray-800">
         <div class="flex items-center justify-between mb-2">
           <h3 class="text-lg font-semibold">Saved SERFF Query Templates</h3>
-          <button @click="showTemplates=false" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50">Close</button>
+          <button @click="showTemplates=false" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:border-gray-700">Close</button>
         </div>
-        <p class="text-sm text-gray-600 mb-3">SERFF SFA doesn’t support deep-linking queries; use these templates after clicking “Begin Search” in the state portal.</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">SERFF SFA doesn’t support deep-linking queries; use these templates after clicking “Begin Search” in the state portal.</p>
         <ul class="space-y-3 text-sm">
           <li><strong>By Company Name</strong>: <code>Company Name = {e.g., State Farm}</code></li>
           <li><strong>By Type of Insurance (TOI)</strong>: <code>TOI = {e.g., Commercial Auto; Personal Auto; Homeowners; Life; Accident & Health}</code></li>
@@ -70,24 +76,24 @@
         <div class="mt-4 grid sm:grid-cols-2 gap-3">
           <div>
             <label class="block text-xs mb-1">Quick Copy — Company</label>
-            <input x-model="template.company" class="w-full rounded-xl border px-3 py-2" placeholder="e.g., Travelers"/>
+            <input x-model="template.company" class="w-full rounded-xl border px-3 py-2 bg-white text-gray-900 border-gray-300 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700" placeholder="e.g., Travelers"/>
           </div>
           <div>
             <label class="block text-xs mb-1">Quick Copy — TOI</label>
-            <input x-model="template.toi" class="w-full rounded-xl border px-3 py-2" placeholder="e.g., Homeowners"/>
+            <input x-model="template.toi" class="w-full rounded-xl border px-3 py-2 bg-white text-gray-900 border-gray-300 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700" placeholder="e.g., Homeowners"/>
           </div>
           <div>
             <label class="block text-xs mb-1">From</label>
-            <input x-model="template.from" type="date" class="w-full rounded-xl border px-3 py-2"/>
+            <input x-model="template.from" type="date" class="w-full rounded-xl border px-3 py-2 bg-white text-gray-900 border-gray-300 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700"/>
           </div>
           <div>
             <label class="block text-xs mb-1">To</label>
-            <input x-model="template.to" type="date" class="w-full rounded-xl border px-3 py-2"/>
+            <input x-model="template.to" type="date" class="w-full rounded-xl border px-3 py-2 bg-white text-gray-900 border-gray-300 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700"/>
           </div>
         </div>
         <div class="mt-3 flex items-center gap-2">
-          <button @click="copyTemplate()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50">Copy Template</button>
-          <span class="text-xs text-gray-500">Paste into SERFF filters after clicking Begin Search.</span>
+          <button @click="copyTemplate()" class="rounded-xl px-3 py-2 border bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:border-gray-700">Copy Template</button>
+          <span class="text-xs text-gray-500 dark:text-gray-400">Paste into SERFF filters after clicking Begin Search.</span>
         </div>
       </div>
     </div>
@@ -99,14 +105,14 @@
 
     <div class="grid gap-4 md:grid-cols-2">
       <template x-for="s in filtered" :key="s.stateCode">
-        <article class="rounded-2xl border bg-white p-4 shadow-sm">
+        <article class="rounded-2xl border bg-white p-4 shadow-sm dark:bg-gray-900 dark:border-gray-800">
           <div class="flex items-center justify-between">
             <div>
               <h2 class="text-lg font-semibold" x-text="s.stateName + ' (' + s.stateCode + ')'"></h2>
               <div class="mt-1 flex items-center gap-2">
-                <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 border" x-text="s.region"></span>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200 text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200" x-text="s.region"></span>
                 <template x-for="b in s.supportedLoB">
-                  <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 border" x-text="b"></span>
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 border border-gray-200 text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200" x-text="b"></span>
                 </template>
               </div>
             </div>
@@ -114,7 +120,7 @@
               <div>Links: <span x-text="s.links.length"></span></div>
             </div>
           </div>
-          <p class="mt-3 text-sm text-gray-700" x-show="s.notes" x-text="s.notes"></p>
+           <p class="mt-3 text-sm text-gray-700 dark:text-gray-300" x-show="s.notes" x-text="s.notes"></p>
           <ul class="mt-3 space-y-2">
             <template x-for="lnk in s.links" :key="lnk.url">
               <li class="flex items-center justify-between gap-2">
@@ -125,12 +131,12 @@
                 <div class="flex items-center gap-2 shrink-0">
                   <template x-if="health.results[lnk.url]">
                     <span class="text-xs px-2 py-1 rounded-full"
-                      :class="health.results[lnk.url].ok ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'"
+                      :class="health.results[lnk.url].ok ? 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' : 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300'"
                       x-text="health.results[lnk.url].ok ? 'OK' : ('ERR ' + (health.results[lnk.url].status || ''))">
                     </span>
                   </template>
-                  <a :href="lnk.url" target="_blank" rel="noreferrer" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50">Open</a>
-                  <button @click="copy(lnk.url)" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50">Copy</button>
+                  <a :href="lnk.url" target="_blank" rel="noreferrer" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:border-gray-700">Open</a>
+                  <button @click="copy(lnk.url)" class="rounded-xl px-3 py-1.5 border bg-white hover:bg-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:border-gray-700">Copy</button>
                 </div>
               </li>
             </template>
@@ -141,6 +147,17 @@
   </main>
 
   <script>
+    // Theme toggle handler
+    (function(){
+      const btn = document.getElementById('themeToggle');
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        const root = document.documentElement;
+        const isDark = root.classList.toggle('dark');
+        try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+      });
+    })();
+
     function basePath() {
       // Handles GitHub Pages subpath deployments
       const path = window.location.pathname;
