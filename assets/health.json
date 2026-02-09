@@ -1,12 +1,7 @@
 {
-  "updatedAt": "2026-02-02T09:38:11.203Z",
+  "updatedAt": "2026-02-09T09:54:33.263Z",
   "results": {
     "https://www.google.com/search?q=Alabama+Department+of+Insurance+SERFF+public+access": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://www.google.com/search?q=Alaska+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -16,12 +11,17 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/AK": {
+    "https://www.google.com/search?q=Alaska+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
     },
     "https://filingaccess.serff.com/sfa/home/AL": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/AK": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -36,12 +36,17 @@
       "status": 200,
       "err": ""
     },
+    "https://www.google.com/search?q=Colorado+Department+of+Insurance+SERFF+public+access": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
     "https://filingaccess.serff.com/sfa/home/AR": {
       "ok": true,
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=Colorado+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/CA": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -56,12 +61,7 @@
       "status": 200,
       "err": ""
     },
-    "https://www.insurance.ca.gov/0250-insurers/0800-rate-filings/0050-viewing-room/": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://www.google.com/search?q=District+of+Columbia+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/CO": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -71,7 +71,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/CA": {
+    "https://www.insurance.ca.gov/0250-insurers/0800-rate-filings/0050-viewing-room/": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -81,17 +81,17 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/DE": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/CO": {
+    "https://www.google.com/search?q=District+of+Columbia+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
     },
     "https://filingaccess.serff.com/sfa/home/DC": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/DE": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -106,17 +106,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/GA": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
     "https://www.google.com/search?q=Idaho+Department+of+Insurance+SERFF+public+access": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/ID": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -126,12 +116,7 @@
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=Indiana+Department+of+Insurance+SERFF+public+access": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/IN": {
+    "https://filingaccess.serff.com/sfa/home/GA": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -141,12 +126,12 @@
       "status": 200,
       "err": ""
     },
-    "https://idoi.illinois.gov/companies/rate-rule-form-filings-public-access.html": {
+    "https://filingaccess.serff.com/sfa/home/ID": {
       "ok": true,
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=Iowa+Department+of+Insurance+SERFF+public+access": {
+    "https://www.google.com/search?q=Indiana+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -156,17 +141,27 @@
       "status": 200,
       "err": ""
     },
+    "https://www.google.com/search?q=Iowa+Department+of+Insurance+SERFF+public+access": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
     "https://www.google.com/search?q=Kansas+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=Louisiana+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/IN": {
       "ok": true,
       "status": 200,
       "err": ""
     },
     "https://www.google.com/search?q=Kentucky+Department+of+Insurance+SERFF+public+access": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://www.google.com/search?q=Louisiana+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -181,12 +176,22 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/KY": {
+    "https://filingaccess.serff.com/sfa/home/LA": {
       "ok": true,
       "status": 200,
       "err": ""
     },
     "https://www.google.com/search?q=Maryland+Department+of+Insurance+SERFF+public+access": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/KY": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/ME": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -201,12 +206,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/ME": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/LA": {
+    "https://www.google.com/search?q=Minnesota+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -221,12 +221,22 @@
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=Minnesota+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/MI": {
       "ok": true,
       "status": 200,
       "err": ""
     },
     "https://www.google.com/search?q=Mississippi+Department+of+Insurance+SERFF+public+access": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://idoi.illinois.gov/companies/rate-rule-form-filings-public-access.html": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/MN": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -241,22 +251,12 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/MI": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
     "https://filingaccess.serff.com/sfa/home/MO": {
       "ok": true,
       "status": 200,
       "err": ""
     },
     "https://filingaccess.serff.com/sfa/home/MS": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/MN": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -271,12 +271,12 @@
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=Nevada+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/NE": {
       "ok": true,
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=New+Hampshire+Department+of+Insurance+SERFF+public+access": {
+    "https://www.google.com/search?q=Nevada+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -286,7 +286,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/NE": {
+    "https://www.google.com/search?q=New+Hampshire+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -301,17 +301,12 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/NH": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
     "https://filingaccess.serff.com/sfa/home/NJ": {
       "ok": true,
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=North+Carolina+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/NH": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -326,12 +321,12 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/NY": {
+    "https://www.google.com/search?q=North+Carolina+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/NC": {
+    "https://www.dfs.ny.gov/apps_and_licensing/health_insurers/serff_filing_instructions/ah_filings_ny": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -346,6 +341,16 @@
       "status": 200,
       "err": ""
     },
+    "https://filingaccess.serff.com/sfa/home/NY": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/NC": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
     "https://filingaccess.serff.com/sfa/home/ND": {
       "ok": true,
       "status": 200,
@@ -356,7 +361,7 @@
       "status": 200,
       "err": ""
     },
-    "https://www.dfs.ny.gov/apps_and_licensing/health_insurers/serff_filing_instructions/ah_filings_ny": {
+    "https://filingaccess.serff.com/sfa/home/OR": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -371,12 +376,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/OR": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://www.google.com/search?q=Rhode+Island+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/RI": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -386,7 +386,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/RI": {
+    "https://www.google.com/search?q=Rhode+Island+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -401,17 +401,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/SD": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
     "https://filingaccess.serff.com/sfa/home/SC": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/TN": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -421,7 +411,22 @@
       "status": 200,
       "err": ""
     },
+    "https://filingaccess.serff.com/sfa/home/SD": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://dfr.oregon.gov/rates-forms/pages/serff-public-review.aspx": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
     "https://filingaccess.serff.com/sfa/home/TX": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/TN": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -436,7 +441,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/VT": {
+    "https://www.google.com/search?q=Virginia+Department+of+Insurance+SERFF+public+access": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -446,12 +451,12 @@
       "status": 200,
       "err": ""
     },
-    "https://dfr.oregon.gov/rates-forms/pages/serff-public-review.aspx": {
+    "https://filingaccess.serff.com/sfa/home/VT": {
       "ok": true,
       "status": 200,
       "err": ""
     },
-    "https://www.google.com/search?q=Virginia+Department+of+Insurance+SERFF+public+access": {
+    "https://filingaccess.serff.com/sfa/home/VA": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -466,42 +471,7 @@
       "status": 200,
       "err": ""
     },
-    "https://filingaccess.serff.com/sfa/home/VA": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/WA": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
     "https://www.google.com/search?q=West+Virginia+Department+of+Insurance+SERFF+public+access": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://www.google.com/search?q=Wisconsin+Department+of+Insurance+SERFF+public+access": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://www.google.com/search?q=Wyoming+Department+of+Insurance+SERFF+public+access": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/WV": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/WI": {
-      "ok": true,
-      "status": 200,
-      "err": ""
-    },
-    "https://filingaccess.serff.com/sfa/home/WY": {
       "ok": true,
       "status": 200,
       "err": ""
@@ -512,6 +482,36 @@
       "err": ""
     },
     "https://www.insurance.wa.gov/insurers-regulated-entities/rate-and-form-filing/serff-guidelines": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://www.google.com/search?q=Wisconsin+Department+of+Insurance+SERFF+public+access": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/WA": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/WV": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://www.google.com/search?q=Wyoming+Department+of+Insurance+SERFF+public+access": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/WY": {
+      "ok": true,
+      "status": 200,
+      "err": ""
+    },
+    "https://filingaccess.serff.com/sfa/home/WI": {
       "ok": true,
       "status": 200,
       "err": ""
